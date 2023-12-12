@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responseive portfolio Design</title>
+    <link rel="stylesheet" href="index1.css">
+    <!----Font awesome cdn font icon css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="hero-header">
+    <div class="wrapper"> 
+    <header>
+        <div class="logo">  
+     <i class="fa-solid fa-a"></i>
+<div class="logo-text">Kannan Palanisamy</div>
+</div>
+<nav>
+<div class="togglebtn">
+   <span></span>
+   <span></span>
+   <span></span>
+</div>
+<ul class="navlinks">
+<li><a href="#">Home</a></li>
+<li><a href="#">portfolio</a></li>
+<li><a href="#">Resume</a></li>
+<li><a href="#">Blog</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+
+</nav>
+
+</header>  
+    <div class="container">
+        <div class="hero-pic">
+            <img src="Kannan.jpeg" alt="Kannan Palanisamy">
+        </div>
+    <div class="hero-text">
+     <h5>Hi I'm <span class="input">Software Developer</span></h5>
+    <h1>Kannan Palanisamy</h1>
+    <p>Hope your Fine,i'm Kannan palanisamy.working as SoftwareDeveloper at Fourd technologies having
+        1+ year of experience.
+    </p>
+    <div class="btn-group">
+        <a href="#" class="btn active">Download CV</a>
+        <a href="#" class="btn">Contact</a>
+    </div>
+    
+    <div class="social">
+      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      
+    </div>
+</div>
+    </div>
+</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+<script>
+    var togglebtn=document.querySelector(".togglebtn");
+    var nav=document.querySelector(".navlinks");
+    var links=document.querySelector(".navlinks li")
+
+     togglebtn.addEventListener("click",function(){
+        this.classList.toggle("click");
+        nav.classList.toggle("open");
+
+     })
+
+var typed=new typed(".input",{
+    strings:["Software Developer","Java Developer"],
+    typedspeed:70,
+    backspeed:50,
+    loop:true
+})
+
+</script>
+</body>
+</html>
